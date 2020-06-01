@@ -1,49 +1,52 @@
 import Head from 'next/head'
 
+const themes = {
+  light: {
+    bodyBg: 'white',
+    main: 'black',
+    gray: '#999',
+    darkGray: '#444',
+    link: '#0076FF',
+    skill: '#e3e5e7',
+    border: '#eaeaea'
+  },
+  dark: {
+    bodyBg: 'black',
+    main: 'white',
+    gray: '#ccc',
+    darkGray: '#999',
+    link: '#fff',
+    skill: '#333',
+    border: '#333'
+  }
+}
+
+
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
+      <title>makito</title>
       <link rel="icon" href="/favicon.ico" />
+      
     </Head>
 
     <main>
+
       <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <span className="line-through"><b>Welcome to makito</b></span> Oops!
       </h1>
+      <h2 className="title">
+      Under construction 🚧
+      </h2>
+
+      <hr></hr>
 
       <p className="description">
-        Get started by editing <code>pages/index.js</code>
+      mental backup of what I think and what I do
       </p>
 
       <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
 
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with Vercel.
-          </p>
-        </a>
       </div>
     </main>
 
@@ -53,11 +56,12 @@ const Home = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Powered by <img src="/vercel.svg" alt="Vercel Logo" />
+       Powered by <img src="/vercel.svg" alt="Vercel Logo" />
       </a>
     </footer>
 
     <style jsx>{`
+
       .container {
         min-height: 100vh;
         padding: 0 0.5rem;
@@ -67,6 +71,15 @@ const Home = () => (
         align-items: center;
       }
 
+      .intro {
+        max-width: 980px;
+        padding: 0 30px;
+      }
+
+      .line-through {
+        text-decoration:line-through;
+      }
+
       main {
         padding: 5rem 0;
         flex: 1;
@@ -74,6 +87,15 @@ const Home = () => (
         flex-direction: column;
         justify-content: center;
         align-items: center;
+      }
+
+      h2 {
+        font-size: 3em;
+        margin: 0;
+      }
+      h3 {
+        margin: 0;
+        text-transform: uppercase;
       }
 
       footer {
@@ -128,7 +150,7 @@ const Home = () => (
       }
 
       code {
-        background: #fafafa;
+        background: ${themes.light.bodyBg};
         border-radius: 5px;
         padding: 0.75rem;
         font-size: 1.1rem;
@@ -187,10 +209,16 @@ const Home = () => (
     <style jsx global>{`
       html,
       body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        background-color: ${themes.light.bodyBg};
+        color: ${themes.light.main};
+        font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 400;
+        margin: 0 20px 0 20px;
+        line-height: 1.47059;
+        letter-spacing: -.022em;
+        transition: background-color 0.2s ease, color 0.2s ease;
       }
 
       * {
