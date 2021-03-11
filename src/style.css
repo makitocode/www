@@ -1,0 +1,108 @@
+
+body{
+  color: #9A9A9A;
+  background-color: #161b22;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+
+.header{
+  /* border-style: dotted;
+  border-color: red; */
+  height: 20vh;
+  font-size:medium;
+  justify-content: flex-start;
+  font-size: 2vh;
+  /* font-size: 2vh; */
+}
+
+header{
+  margin-top: 2vh;
+  /* border-style: ridge; */
+}
+
+.spanLogo{
+  font-size: 2vh;
+  color: #FFBC42;
+}
+
+.container{
+  /* border-style: double;
+  border-color: coral; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+.BigHello{
+  /* border-style: groove; */
+  font-size: 12vh;
+  font-weight: normal;
+  margin-bottom: 0vh;
+  padding-bottom: 0vh;
+  width: 67vh;
+}
+
+.FirstLine{
+  /* border-style: groove; */
+  margin-bottom: 0vh;
+  margin-left: 2vh;
+  font-size: 3vh;
+  width: 67vh;
+  justify-content: center;
+  line-height: 1vh;
+}
+.SecondLine{
+  /* border-style: groove; */
+  margin-bottom: 0vh;
+  margin-left: 2vh;
+  font-size: 3vh;
+  width: 67vh;
+  align-items: center;
+  word-spacing: 1vh;
+}
+
+a{
+  color: aliceblue;
+  /* color: #FFBC42; */
+}
+
+span{
+  color: azure;
+  font-size: 7vh;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vh;
+}
+
+.nav-links{
+  color: #9A9A9A;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5vh;
+  justify-content: space-evenly;
+  
+  align-items: center;
+  height: 100%;
+  margin-right: 35%;
+  margin-left: 35%;
+  /* background: coral; */
+}
+
+.nav-links li a {
+  text-decoration: none;
+}

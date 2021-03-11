@@ -1,0 +1,24 @@
+body{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section1{
+  background-color: cyan;
+  height: 20vh;
+  
+}
+
+.section2{
+  background-color: gray;
+  height: 80vh;
+}
+
+.section3{
+  background-color: azure;
+  height: 20vh;
+}
